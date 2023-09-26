@@ -1,0 +1,57 @@
+body
+{ background-color: hotpink; 
+
+}
+
+h1
+
+{ color:red; 
+front-size: 40px;
+text-align: center;
+
+ }
+
+h2
+
+{ color:yellow; }
+
+h3
+
+{ color:white; }
+
+div
+{ 
+	border: 7px solid black;
+width: 75%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 5%;
+padding: 3%;
+color: black;
+border-radius: 5%;
+ }
+
+ .Groupe1
+ { background-color: blueviolet; }
+
+  .Groupe2
+ { background-color: burlywood; }
+
+.b1
+{background-color: #0074d9;
+color: greenyellow;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+text-align: center;
+margin: 10px;
+cursor: pointer;
+transition: color 0.3s ease;
+width: 250px;
+
+}
+
+.b1:hover {
+	color: red;
+	background-color: yellow;
+}
