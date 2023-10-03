@@ -1,0 +1,114 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>QCM Basket</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Questionnaire sur le Basket</h1>
+    <form id="qcm-form">
+        <div class="question">
+            <p>1. Combien de joueurs sont autorisés sur le terrain en même temps dans une équipe de basket ?</p>
+            <div class="options">
+                <input type="radio" name="q1" value="a"> a) 5
+                <input type="radio" name="q1" value="b"> b) 6
+                <input type="radio" name="q1" value="c"> c) 7
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. Quelle est la hauteur du panier de basket standard en mètres ?</p>
+            <div class="options">
+                <input type="radio" name="q2" value="a"> a) 2.75 mètres
+                <input type="radio" name="q2" value="b"> b) 3.00 mètres
+                <input type="radio" name="q2" value="c"> c) 3.05 mètres
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. Combien de temps dure un match de basket NBA en quart-temps ?</p>
+            <div class="options">
+                <input type="radio" name="q3" value="a"> a) 10 minutes
+                <input type="radio" name="q3" value="b"> b) 12 minutes
+                <input type="radio" name="q3" value="c"> c) 15 minutes
+            </div>
+        </div>
+
+        <div class="question">
+            <p>4. Quel est le nom du joueur de basket célèbre surnommé "King" ?</p>
+            <div class="options">
+                <input type="radio" name="q4" value="a"> a) LeBron James
+                <input type="radio" name="q4" value="b"> b) Stephen Curry
+                <input type="radio" name="q4" value="c"> c) Kevin Durant
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. Quel est le nom du championnat de basket-ball universitaire aux États-Unis ?</p>
+            <div class="options">
+                <input type="radio" name="q5" value="a"> a) NBA
+                <input type="radio" name="q5" value="b"> b) NCAA
+                <input type="radio" name="q5" value="c"> c) EuroLeague
+            </div>
+        </div>
+
+        <div class="question">
+            <p>6. Quelle équipe de la NBA est basée à Los Angeles ?</p>
+            <div class="options">
+                <input type="radio" name="q6" value="a"> a) Boston Celtics
+                <input type="radio" name="q6" value="b"> b) Chicago Bulls
+                <input type="radio" name="q6" value="c"> c) Los Angeles Lakers
+            </div>
+        </div>
+
+        <div class="question">
+            <p>7. Quel est le nom du célèbre joueur de basket chinois qui a joué pour les Houston Rockets ?</p>
+            <div class="options">
+                <input type="radio" name="q7" value="a"> a) Yao Ming
+                <input type="radio" name="q7" value="b"> b) Jeremy Lin
+                <input type="radio" name="q7" value="c"> c) Dirk Nowitzki
+            </div>
+        </div>
+
+        <div class="question">
+            <p>8. Quelle est la durée d'un quart-temps dans le basket-ball féminin universitaire NCAA ?</p>
+            <div class="options">
+                <input type="radio" name="q8" value="a"> a) 8 minutes
+                <input type="radio" name="q8" value="b"> b) 10 minutes
+                <input type="radio" name="q8" value="c"> c) 12 minutes
+            </div>
+        </div>
+
+        <div class="question">
+            <p>9. Dans quel pays a été inventé le basket-ball ?</p>
+            <div class="options">
+                <input type="radio" name="q9" value="a"> a) France
+                <input type="radio" name="q9" value="b"> b) Canada
+                <input type="radio" name="q9" value="c"> c) États-Unis
+            </div>
+        </div>
+
+        <div class="question">
+            <p>10. Quel est le nom du joueur de basket célèbre surnommé "The Greek Freak" ?</p>
+            <div class="options">
+                <input type="radio" name="q10" value="a"> a) Giannis Antetokounmpo
+                <input type="radio" name="q10" value="b"> b) Kawhi Leonard
+                <input type="radio" name="q10" value="c"> c) Chris Paul
+
+                <div id="correction"></div>
+            </div>
+        </div>
+        
+        <input type="button" value="Effacer les sélections" onclick="clearSelections()">
+        <a href="correction.html"><input type="button" value="Correction Dynamique" onclick="checkAnswers()"></a>
+        <input type="button" value="Valider le QCM" onclick="validateQCM()">
+
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
