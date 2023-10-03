@@ -1,57 +1,62 @@
-body
-{ background-color: hotpink; 
-
+/* Style pour la page de correction */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
 }
 
-h1
-
-{ color:red; 
-front-size: 40px;
-text-align: center;
-
- }
-
-h2
-
-{ color:yellow; }
-
-h3
-
-{ color:white; }
-
-div
-{ 
-	border: 7px solid black;
-width: 75%;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 5%;
-padding: 3%;
-color: black;
-border-radius: 5%;
- }
-
- .Groupe1
- { background-color: blueviolet; }
-
-  .Groupe2
- { background-color: burlywood; }
-
-.b1
-{background-color: #0074d9;
-color: greenyellow;
-border: none;
-border-radius: 5px;
-padding: 10px 20px;
-text-align: center;
-margin: 10px;
-cursor: pointer;
-transition: color 0.3s ease;
-width: 250px;
-
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.b1:hover {
-	color: red;
-	background-color: yellow;
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.question {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.correct-answer {
+    color: #009900;
+    font-weight: bold;
+}
+
+.incorrect-answer {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Style pour le bouton de fermeture de la page */
+.close-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.close-button:hover {
+    background-color: #555;
+}
+
+
+
+/* Style pour les mauvaises réponses en rouge */
+.incorrect-answer {
+    color: #ff0000; /* Rouge */
+    font-weight: bold;
 }
