@@ -1,0 +1,87 @@
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+#cv-container {
+    width: 780px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid #3388CC;
+}
+
+.profile-picture {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.header-info {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.section {
+    margin-top: 70px;
+    border-top: 2px solid darkred;
+    padding-top: 20px;
+}
+
+.section h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Ajout des points pour les éléments de liste et les paragraphes */
+ul,
+ol,
+p {
+    text-indent: 1em; /* Décalage à gauche pour les marqueurs */
+    margin: 0; /* Supprimez la marge par défaut des paragraphes */
+}
+
+/* Marqueurs pour les éléments de liste */
+ul {
+    list-style-type: disc; /* Point plein pour les listes non ordonnées */
+}
+
+ol {
+    list-style-type: decimal; /* Chiffre pour les listes ordonnées */
+}
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Autres styles... */
+
+/* Ajouter un marqueur au début de chaque paragraphe */
+p::before {
+    content: "\2022"; /* Utilise le caractère Unicode pour un point (•) */
+    display: inline-block;
+    width: 1em; /* Espace entre le point et le texte */
+    margin-right: 0.5em; /* Espace à droite du point */
+}
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Autres styles... */
+
+/* Ajouter de la marge inférieure entre les paragraphes */
+p {
+    margin-bottom: 10px; /* Ajustez la valeur selon votre préférence */
+}
