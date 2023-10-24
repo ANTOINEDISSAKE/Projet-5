@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+#invoice {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: blueviolet;
+}
+
+h1 {
+    color: darkred;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: grey;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: yellowgreen;
+    color: black;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}

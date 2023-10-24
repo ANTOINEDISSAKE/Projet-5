@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facture</title>
+    <link rel="stylesheet" type="text/css" href="style7.css">
+
+    <style>
+        /* ... Styles restants du code précédent ... */
+    </style>
+</head>
+<body style="background-color: black;">
+    <div id="invoice">
+        <h1>Facture en Javascript</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produit</th>
+                    <th>Prix </th>
+                    <th>Quantité</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="invoice-items">
+                <!-- Les lignes de facture seront ajoutées ici avec JavaScript -->
+            </tbody>
+        </table>
+        <p>Résultat : <span id="total">0.00</span> €</p>
+        <button id="addItemButton">Ajouter un produit</button>
+        <button id="resetButton">Réinitialiser</button>
+    </div>
+
+    <script>
+        const addItemButton = document.getElementById("addItemButton");
+        const resetButton = document.getElementById("resetButton");
+        const invoiceItems = document.getElementById("invoice-items");
+        const totalSpan = document.getElementById("total");
+
+        let total = 0.00;
+
+        addItemButton.addEventListener("click", function() {
+            const row = document.createElement("tr");
+            const productName = prompt("Article");
+            const unitPrice = parseFloat(prompt("Prix "));
+            const quantity = parseInt(prompt("Quantité"));
+
+            if (isNaN(unitPrice) || isNaN(quantity)) {
+                alert("Prix unitaire et quantité doivent être des nombres valides.");
+                return;
+            }
+
+            const itemTotal = unitPrice * quantity;
+            total += itemTotal;
+
+            row.innerHTML = `
+                <td>${productName}</td>
+                <td>${unitPrice.toFixed(2)} €</td>
+                <td>${quantity}</td>
+                <td>${itemTotal.toFixed(2)} €</td>
+            `;
+
+            invoiceItems.appendChild(row);
+            totalSpan.textContent = total.toFixed(2) + " ";
+        });
+
+        resetButton.addEventListener("click", function() {
+            invoiceItems.innerHTML = "";
+            total = 0.00;
+            totalSpan.textContent = total.toFixed(2) + " €";
+        });
+    </script>
+</body>
+</html>
