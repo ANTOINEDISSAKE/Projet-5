@@ -1,0 +1,49 @@
+<html lang="en">
+    <body>
+        <h2>Tableau Dynamique</h2>
+        <table id="myTable">
+            <tr>
+                <td>Nom</td>
+                <td>Age</td>
+            </tr>
+        </table>
+
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom">
+
+        <label for="age">Age:</label>
+        <input type="text" id="age">
+
+        <button onclick="ajouterLigne()">Ajouter une ligne</button>
+
+        <script>
+            function ajouterLigne() {
+                var table = document.getElementById("myTable");
+                var newRow = table.insertRow(-1);
+                var cell1 = newRow.insertCell(0);
+                var cell2 = newRow.insertCell(1);
+
+                var nom = document.getElementById("nom").value;
+                var age = document.getElementById("age").value;
+
+                if (nom === "" || age === "") {
+                    alert("Veuillez remplir tous les champs.");
+                    return;
+
+            }
+
+            if (isNaN(age) || age < 10 || age > 20) {
+                    alert("Mauvais age");
+                    return;
+                }
+                
+                cell1.innerHTML = nom;
+                cell2.innerHTML = age;
+
+
+                document.getElementById("nom").value = "";
+                document.getElementById("age").value = "";
+            }
+        </script>
+    </body>
+</html>
