@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+
+
+<h2> Tableau Dynamique</h2>
+<table id="myTable">
+	<tr>
+		<td>Nom</td>
+		<td>Age</td>
+		</tr>
+<tr>
+	<td>John</td>
+	<td>30</td>
+</tr>
+		<td>Jane</td>
+	<td>25</td>
+</tr>
+
+
+</table>
+</tr>
+
+
+
+<button onclick="ajouterLigne()">Ajouter une ligne</button>
+<script>
+	function ajouterLigne() {
+		var table = document.getElementById("myTable");
+		var newRow = table.insertRow(-1);
+		var cell1 = newRow.insertCell(0);
+		var cell2 = newRow.insertCell(1);
+		cell1.innerHTML = "Nouveau Nom"
+		cell2.innerHTML = "Nouvel Age"
+			}
+
+
+	</script>
+
+	
+</body>
+</html>
